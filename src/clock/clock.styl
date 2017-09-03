@@ -1,0 +1,36 @@
+.clock
+  width 100%
+  border 1px solid red
+  display flex
+  &-root
+    margin 100px auto
+    height 150px
+    width 400px
+  &_button-container, &_display-container
+    flex-basis 50%
+    border 1px solid green
+    position relative
+  &_button, &_display
+    border 1px solid #7e6fff
+    display inline-block
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    padding 10px
+    user-select none
+  &_button:hover, &_display:hover
+    cursor pointer
+
+  .hour {
+    color: red
+  }
+  .min {
+    color: green
+  }
+  .sec {
+    color: blue
+  }
+  .hidden {
+    display none
+  }
